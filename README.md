@@ -12,12 +12,14 @@ FROM world_life_expectancy;
 SELECT country, year, CONCAT(country, year)
 FROM world_life_expectancy;
 
+
 #Identify the duplicats in Country, Year and Row_ID
 
 SELECT country, year, CONCAT(country, year), COUNT(CONCAT(country, year))
 FROM world_life_expectancy
 GROUP BY country, year, CONCAT(country, year)
 HAVING COUNT(CONCAT(country, year)) > 1;
+
 
 #Which Row_ID has duplicates
 
@@ -27,6 +29,7 @@ FROM (SELECT Row_ID,
 	ROW_NUMBER() OVER(PARTITION BY CONCAT(country, year) ORDER BY CONCAT(country, year)) AS row_num
 	FROM world_life_expectancy) AS row_table
 WHERE row_num > 1;
+
 
 #Delete the duplicates Row_ID
 
@@ -38,6 +41,7 @@ WHERE Row_ID IN
 	ROW_NUMBER() OVER(PARTITION BY CONCAT(country, year) ORDER BY CONCAT(country, year)) AS row_num
 	FROM world_life_expectancy) AS row_table
 	WHERE row_num > 1);
+
 
 #Check Status column for blanks, nulls then populate data
 
@@ -55,6 +59,7 @@ WHERE status <> '';
 SELECT DISTINCT(country)
 FROM world_life_expectancy
 WHERE status = 'Developing';
+
 
 #Update dataset, self join to fill country's status that blank
 
@@ -86,11 +91,13 @@ SELECT *
 FROM world_life_expectancy
 WHERE status IS NULL;
 
+
 #Check Life Expectancy column for blanks, nulls then populate data
 
 SELECT * 
 FROM world_life_expectancy
 WHERE `Life expectancy` = '';
+
 
 #Self join to find the average life expectancy between the year before and the year after to populate blanks
 
@@ -121,9 +128,11 @@ SELECT *
 FROM world_life_expectancy
 WHERE `Life expectancy` = '';
 
+
 ##Exploratory data analysis
 SELECT * 
 FROM world_life_expectancy;
+
 
 #Which country have the higher and the lower life expectancy and highest increase in Life expectancy
 #Also filter out some country that has 0 values
@@ -136,6 +145,7 @@ HAVING MIN(`Life expectancy`) <> 0
 AND MIN(`Life expectancy`) <> 0
 ORDER BY Life_Increase_Over_15_Years DESC;
 
+
 ##The world average life expectancy
 
 SELECT Year, ROUND(AVG(`Life expectancy`),2) AS Average_Life_Expectancy
@@ -145,6 +155,7 @@ AND `Life expectancy`<> 0
 GROUP BY Year
 ORDER BY Year;
 
+
 ##Which country has the highest average of Life expectancy?
 
 SELECT country, Year, ROUND(AVG(`Life expectancy`),2) AS Average_Life_Expectancy
@@ -153,6 +164,7 @@ WHERE `Life expectancy`<> 0
 AND `Life expectancy`<> 0
 GROUP BY country, Year
 ORDER BY Year DESC, Average_Life_Expectancy DESC;
+
 
 #The correlation between life expectancy and GDP(Gross Domestic Product)
 #The average of the life expectancy and GDP of each country
@@ -166,6 +178,7 @@ AND Average_GDP > 0
 ORDER BY Average_GDP ASC;
 
 ##The lower the GDPs are correlated with lower life expectancy, it can be that their healthcare infrastucture is now as well built
+
 
 ## The positive correlation, the higher the GDPs, is also the higher the life expectancy
 
@@ -190,6 +203,7 @@ FROM world_life_expectancy;
 
 #1326 rows that GDP >= 1500
 
+
 SELECT 
 SUM(CASE WHEN GDP >= 1500 THEN 1 ELSE 0 END) High_GDP_Count,
 AVG(CASE WHEN GDP >= 1500 THEN `Life expectancy`ELSE NULL END) High_GDP_Life_expectancy
@@ -209,6 +223,7 @@ FROM world_life_expectancy;
 #1326 rows that GDP >= 1500, have the average of High_GDP_Life_expectancy at 74.02 years
 #1612 rows that GDP <= 1500, have the average of Low_GDP_Life_expectancy at 64.70 years
 
+
 #The difference in life expectancy among countries's status
 
 SELECT * 
@@ -220,6 +235,7 @@ FROM world_life_expectancy;
 SELECT status, ROUND(AVG(`Life expectancy`),1)
 FROM world_life_expectancy
 GROUP BY status;
+
 
 #How many Developed and Developing country? 32 & 161
 
@@ -237,6 +253,7 @@ ORDER BY Average_BMI DESC;
 
 #Lower BMI, lower life expectancy
 
+
 SELECT country, ROUND(AVG(GDP),1) AS Average_GDP,
 	ROUND(AVG(BMI),1) AS average_BMI
 FROM world_life_expectancy
@@ -247,14 +264,15 @@ ORDER BY Average_GDP DESC;
 
 #Lower GDP - lower BMI, Higher GDP - higher BMI
 
-#How many people are dying each year in each country
 
+#How many people are dying each year in each country
 SELECT country, year, status, `Life expectancy`, `Adult Mortality`,
 SUM(`Adult Mortality`) OVER(PARTITION BY country ORDER BY Year) AS Rolling_Total
 FROM world_life_expectancy
 ORDER BY `Adult Mortality` DESC;
 
 #The developing country has much lower life expectancy and higher adult mortality 
+
 
 SELECT country, year, status, `Life expectancy`, `Adult Mortality`,
 SUM(`Adult Mortality`) OVER(PARTITION BY country ORDER BY Year) AS Rolling_Total
