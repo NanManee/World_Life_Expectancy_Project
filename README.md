@@ -1,4 +1,33 @@
-# World_Life_Expectancy 2007 - 2022
+## World_Life_Expectancy 
+
+![Screenshot 2024-02-02 162935](https://github.com/NanManee/World_Life_Expectancy_Project/assets/156528525/f2b54f7a-cc6a-4a62-9b6c-43137865907d)
+
+# Introduction
+
+In this project, we embark through the data on world life expectancy from 2007 to 2022. My goal is to show the average lifespan of people globally, highlight the countries with the highest and lowest life expectancies, and the contrasts between developed and developing nations. Utilizing SQL for the analysis, This project aim to uncover trends and patterns in life expectancy, offering insights into the factors that influence how long people live around the world. This exploration seeks to provide a clear understanding of global health dynamics over the past fifteen years.
+
+# Project Task
+
+- To understanding the current average life expectancy across different countries.
+- Investigate variations in life expectancy between developed and developing countries.
+- Analyze historical data to understand trends in life expectancy and explore factors contributing to changes over time.
+
+# Questions to answers
+
+- What is the latest global life expectancy?
+- Does life expectancy vary between different countries?
+- Identifying which countries have the lowest and highest life expectancy?
+- What trends have been observed in life expectancy over times?
+
+# Data Source
+
+Data Source: www.analystbuilder.com/courses/mysql-for-data-analytics
+Year: 2007-2022
+
+# Tools
+
+MySQL - Data Cleaning and Data Analysis
+Tableau - Data visualization
 
 ```SQL
 #Explore the data for missing field, duplicates, identify the issues and data cleaning
@@ -283,4 +312,23 @@ WHERE country LIKE '%United States%';
 ```
 
 Tableau Visualization: https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_17097682941850/Dashboard1
+
+# Insights
+
+- As of 2022, the latest year for which data is available, the average global life expectancy stands at 72 years.
+
+- Trends observed in life expectancy over time indicate that the average global life expectancy has mostly increased each year over the past 15 years, except for 2020. During the pandemic caused by COVID-19, life expectancy worldwide decreased from 71 years in 2019 to 68 years in 2020. However, there was a rebound to 72 years in 2021.
+
+- The data also highlight the significant gap in life expectancy between developing countries, which have an average of 67 years, and developed countries, with an average of 79 years. The difference may be based on factors such as:
+
+	- Healthcare Access and Quality: Countries with well-developed healthcare systems typically have higher life expectancies. Access to preventive services, early and effective treatment of diseases, and the availability of advanced medical technology can 		  significantly impact overall health outcomes.
+	- Economic Factors: Conversely, poverty is often linked with malnutrition, limited access to clean water, inadequate housing, and a lack of healthcare, all of which can contribute to lower life expectancy.
+	- Education: Higher levels of education can lead to better health outcomes. Educated individuals are more likely to understand health-related information.
+	- Lifestyle Factors: Smoking, alcohol consumption, physical inactivity, and unhealthy eating habits are major risk factors for chronic diseases such as heart disease, cancer, and diabetes, which can lower life expectancy.
+	- Infectious Diseases: Countries with high rates of HIV/AIDS, tuberculosis, malaria, and other infectious diseases often have lower life expectancies. The impact of pandemics, such as COVID-19, has also significantly affected life expectancy rates in 2020.
+	  Understanding the reasons behind variations in life expectancy across different countries is crucial for developing targeted interventions aimed at improving health outcomes and closing the gap in life expectancy.
+   
+- Japan was the only country from Asia to have the highest life expectancy in 2022, at 84 years, followed by Switzerland, Spain, Australia, and Italy, each with 83 years. It appears that many European countries have a high average.
+
+- Sierra Leone had the lowest life expectancy in 2022, at only 46 years. Following closely are the Central African Republic and Lesotho with 49 years, and Angola and Chad with 50 years. These countries are all located in Africa.
 
