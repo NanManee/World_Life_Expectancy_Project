@@ -27,6 +27,7 @@ Year: 2007-2022
 ### Tools
 
 MySQL - Data Cleaning and Data Analysis
+
 Tableau - Data visualization
 
 ```SQL
@@ -330,7 +331,7 @@ https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_170976829
 	- Infectious Diseases: Countries with high rates of HIV/AIDS, tuberculosis, malaria, and other infectious diseases often have lower life expectancies. The impact of pandemics, such as COVID-19, has also significantly affected life expectancy rates in 2020.
 	  Understanding the reasons behind variations in life expectancy across different countries is crucial for developing targeted interventions aimed at improving health outcomes and closing the gap in life expectancy.
    
-- Japan was the only country from Asia to have the highest life expectancy in 2022, at 84 years, followed by Switzerland, Spain, Australia, and Italy, each with 83 years. It appears that many European countries have a high average.
+- Japan was the only country from Asia to have the highest life expectancy in 2022, at 84 years, followed by Switzerland, Spain, Australia, and Italy, each with 83 years. It appears that many European countries have a higher average life expectancy than other parts of the world.
 
 - Sierra Leone had the lowest life expectancy in 2022, at only 46 years. Following closely are the Central African Republic and Lesotho with 49 years, and Angola and Chad with 50 years. These countries are all located in Africa.
 
