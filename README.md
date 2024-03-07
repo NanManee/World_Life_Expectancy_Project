@@ -321,6 +321,10 @@ https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_170976829
 - As of 2022, the latest year for which data is available, the average global life expectancy stands at 72 years.
 
 - Trends observed in life expectancy over time indicate that the average global life expectancy has mostly increased each year over the past 15 years, except for 2020. During the pandemic caused by COVID-19, life expectancy worldwide decreased from 71 years in 2019 to 68 years in 2020. However, there was a rebound to 72 years in 2021.
+  
+- Japan was the only country from Asia to have the highest life expectancy in 2022, at 84 years, followed by Switzerland, Spain, Australia, and Italy, each with 83 years. It appears that many European countries have a higher average life expectancy than other parts of the world.
+
+- Sierra Leone had the lowest life expectancy in 2022, at only 46 years. Following closely are the Central African Republic and Lesotho with 49 years, and Angola and Chad with 50 years. These countries are all located in Africa.
 
 - The data also highlight the significant gap in life expectancy between developing countries, which have an average of 67 years, and developed countries, with an average of 79 years. The difference may be based on factors such as:
 
@@ -331,7 +335,4 @@ https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_170976829
 	- Infectious Diseases: Countries with high rates of HIV/AIDS, tuberculosis, malaria, and other infectious diseases often have lower life expectancies. The impact of pandemics, such as COVID-19, has also significantly affected life expectancy rates in 2020.
 	  Understanding the reasons behind variations in life expectancy across different countries is crucial for developing targeted interventions aimed at improving health outcomes and closing the gap in life expectancy.
    
-- Japan was the only country from Asia to have the highest life expectancy in 2022, at 84 years, followed by Switzerland, Spain, Australia, and Italy, each with 83 years. It appears that many European countries have a higher average life expectancy than other parts of the world.
-
-- Sierra Leone had the lowest life expectancy in 2022, at only 46 years. Following closely are the Central African Republic and Lesotho with 49 years, and Angola and Chad with 50 years. These countries are all located in Africa.
 
