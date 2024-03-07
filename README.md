@@ -1,4 +1,4 @@
-# World_Life_Expectancy
+# World_Life_Expectancy 2007 - 2022
 
 ```SQL
 #Explore the data for missing field, duplicates, identify the issues and data cleaning
@@ -281,3 +281,6 @@ WHERE country LIKE '%United States%';
 
 # The adult mortality rate in the US has significantly decreased since 2014
 ```
+
+Tableau Visualization: https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_17097682941850/Dashboard1
+
