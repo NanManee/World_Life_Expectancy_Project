@@ -1,30 +1,30 @@
-## World_Life_Expectancy 
+# World_Life_Expectancy 
 
 ![Screenshot 2024-02-02 162935](https://github.com/NanManee/World_Life_Expectancy_Project/assets/156528525/f2b54f7a-cc6a-4a62-9b6c-43137865907d)
 
-# Introduction
+### Introduction
 
 In this project, we embark through the data on world life expectancy from 2007 to 2022. My goal is to show the average lifespan of people globally, highlight the countries with the highest and lowest life expectancies, and the contrasts between developed and developing nations. Utilizing SQL for the analysis, This project aim to uncover trends and patterns in life expectancy, offering insights into the factors that influence how long people live around the world. This exploration seeks to provide a clear understanding of global health dynamics over the past fifteen years.
 
-# Project Task
+### Project Task
 
 - To understanding the current average life expectancy across different countries.
 - Investigate variations in life expectancy between developed and developing countries.
 - Analyze historical data to understand trends in life expectancy and explore factors contributing to changes over time.
 
-# Questions to answers
+### Questions to answers
 
 - What is the latest global life expectancy?
 - Does life expectancy vary between different countries?
 - Identifying which countries have the lowest and highest life expectancy?
 - What trends have been observed in life expectancy over times?
 
-# Data Source
+### Data Source
 
 Data Source: www.analystbuilder.com/courses/mysql-for-data-analytics
 Year: 2007-2022
 
-# Tools
+### Tools
 
 MySQL - Data Cleaning and Data Analysis
 Tableau - Data visualization
@@ -311,9 +311,11 @@ WHERE country LIKE '%United States%';
 # The adult mortality rate in the US has significantly decreased since 2014
 ```
 
-Tableau Visualization: https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_17097682941850/Dashboard1
+### Tableau Visualization:
 
-# Insights
+https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_17097682941850/Dashboard1
+
+### Insights
 
 - As of 2022, the latest year for which data is available, the average global life expectancy stands at 72 years.
 
