@@ -8,7 +8,7 @@ In this project, we embark through the data on world life expectancy from 2007 t
 
 ### Project Task
 
-- To understanding the current average life expectancy across different countries.
+- To understand the current average life expectancy across different countries.
 - Investigate variations in life expectancy between developed and developing countries.
 - Analyze historical data to understand trends in life expectancy and explore factors contributing to changes over time.
 
