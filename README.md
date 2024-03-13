@@ -321,12 +321,31 @@ https://public.tableau.com/app/profile/nanthawan.maneethong/viz/world1_170976829
 - As of 2022, the latest year for which data is available, the average global life expectancy stands at 72 years.
 
 - Trends observed in life expectancy over time indicate that the average global life expectancy has mostly increased each year over the past 15 years, except for 2020. During the pandemic caused by COVID-19, life expectancy worldwide decreased from 71 years in 2019 to 68 years in 2020. However, there was a rebound to 72 years in 2021.
+
+
+![image](https://github.com/NanManee/World_Life_Expectancy_Project/assets/156528525/498b678c-1c24-4bb6-95fb-33dc285d9ab5)
+
+
   
 - Japan was the only country from Asia to have the highest life expectancy in 2022, at 84 years, followed by Switzerland, Spain, Australia, and Italy, each with 83 years. It appears that many European countries have a higher average life expectancy than other parts of the world.
 
+![image](https://github.com/NanManee/World_Life_Expectancy_Project/assets/156528525/895cb810-89fe-4361-aefc-b92c841ad31b)
+
+
+
 - Sierra Leone had the lowest life expectancy in 2022, at only 46 years. Following closely are the Central African Republic and Lesotho with 49 years, and Angola and Chad with 50 years. These countries are all located in Africa.
 
+
+![image](https://github.com/NanManee/World_Life_Expectancy_Project/assets/156528525/304d96f9-0f3c-4f55-b5ef-d81d2c89aebb)
+
+
+
 - The data also highlight the significant gap in life expectancy between developing countries, which have an average of 67 years, and developed countries, with an average of 79 years. The difference may be based on factors such as:
+
+
+![image](https://github.com/NanManee/World_Life_Expectancy_Project/assets/156528525/b90176f9-3c11-4f4a-b0ed-b8e2e796fffc)
+
+
 
 	- Healthcare Access and Quality: Countries with well-developed healthcare systems typically have higher life expectancies. Access to preventive services, early and effective treatment of diseases, and the availability of advanced medical technology can 		  significantly impact overall health outcomes.
 	- Economic Factors: Conversely, poverty is often linked with malnutrition, limited access to clean water, inadequate housing, and a lack of healthcare, all of which can contribute to lower life expectancy.
